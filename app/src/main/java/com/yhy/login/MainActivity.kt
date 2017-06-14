@@ -25,12 +25,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //var builder = AlertDialog.Builder(this)
         btnLogin.setOnClickListener {
             val eName = eName.text;
             val ePasswd = ePasswd.text;
             if (isEmpty(eName)) {
-                //builder.setTitle("提示").setMessage("请输入您的用户名！")
                 //Toast.makeText(this, "请输入您的用户名！", Toast.LENGTH_SHORT).show()
                 toast("请输入您的用户名！")
                 tvMessage.text = "请输入您的用户名！";
