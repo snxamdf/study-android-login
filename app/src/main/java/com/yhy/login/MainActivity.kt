@@ -45,7 +45,6 @@ class MainActivity : AppCompatActivity() {
                 //Toast.makeText(this, result!!.msg, Toast.LENGTH_SHORT).show()
             }
         }
-
         var conf = readConf()
         autoLogin(conf, true)
     }
